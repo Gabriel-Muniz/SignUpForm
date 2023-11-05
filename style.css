@@ -74,10 +74,13 @@ body{
 .bottom-right{
     background-color: bisque;
 }
+.right-section > *{
+    padding: 0 0 0 5%;
+}
 form{
     display: grid;
-    grid-template: 1fr repeat(3, 2fr)/repeat(2,1fr);
-
+    grid-template: 1fr repeat(3, 2fr)/1fr 2fr;
+    align-items: center;
 
     width: auto;
     height: 100%;
@@ -87,8 +90,15 @@ legend{
     grid-row: 1;
     grid-column: 1/span 2;
 }
-input{
-    width: 80%;
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"]{
+    width: 200px;
+    height: 1.5rem;
+
+    border: 1px black solid;
+    border-radius: 5px;
 }
 label[for="first_name"],
 input[name="first_name"]{
