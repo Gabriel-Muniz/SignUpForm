@@ -60,7 +60,7 @@ body{
     flex-direction: column;
     flex-grow: 1;
 
-    background-color: greenyellow;
+    background-color: #60A5FA;
     width: 60%;
 }
 .top-right,
@@ -68,14 +68,26 @@ body{
 .bottom-right{
     flex: 1;
 }
-.top-right{
-    background-color: aquamarine;
-}
+.top-right,
 .bottom-right{
-    background-color: bisque;
+    background-color: #1E3A8A;
 }
 .right-section > *{
-    padding: 0 0 0 5%;
+    padding: 2% 0 5% 5%;
+}
+.top-right{
+    display: flex;
+    align-items: center;
+
+    font-size: 2rem;
+    font-family: 'Tilt Neon', sans-serif;
+    color: white;
+
+    text-shadow: 0px 0px 10px #60A5FA , 0px 0px 2px white;
+}
+
+.bottom-right{
+    padding: 5% inherit;
 }
 form{
     display: grid;
@@ -98,7 +110,7 @@ input[type="tel"]{
     height: 1.5rem;
 
     border: 1px black solid;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 label[for="first_name"],
 input[name="first_name"]{
@@ -134,5 +146,8 @@ label[for="password-confirm"],
 input[name="password-confirm"]{
     grid-row: 4;
     grid-column: 2;
+}
+button{
+    height: 1.5rem;
 }
 
