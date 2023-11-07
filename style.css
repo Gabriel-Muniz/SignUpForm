@@ -83,7 +83,7 @@ body{
     font-family: 'Tilt Neon', sans-serif;
     color: white;
 
-    text-shadow: 0px 0px 10px #60A5FA , 0px 0px 2px white;
+    text-shadow: 0px 0px 5px #60A5FA , 0px 0px 5px white;
 }
 
 .bottom-right{
@@ -101,6 +101,11 @@ form{
 legend{
     grid-row: 1;
     grid-column: 1/span 2;
+}
+legend,
+label,
+button{
+    font-family: 'Tilt Neon', sans-serif;
 }
 input[type="text"],
 input[type="password"],
@@ -149,5 +154,18 @@ input[name="password-confirm"]{
 }
 button{
     height: 1.5rem;
+
+    border: 2px solid white;
+    background-color: transparent;
+
+    color: white;
+
+    box-shadow: 0px 0px 5px #60A5FA;
+
+    cursor: pointer;
+}
+input:focus{
+    outline: none;
+    background-color: lightblue;
 }
 
