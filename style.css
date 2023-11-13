@@ -156,11 +156,12 @@ input[name="password-confirm"]{
     grid-column: 2;
 }
 button{
-    height: 1.5rem;
+    height: 1.5em;
 
     border: 2px solid white;
     background-color: transparent;
 
+    font-size: 3em;
     color: white;
 
     box-shadow: 0px 0px 5px #60A5FA;
@@ -171,9 +172,12 @@ button:hover{
     background-color: white;
     color: #1E3A8A;
 }
+input:required{
+    border: 2px solid black;
+}
 input:focus{
     outline: none;
-    background-color: lightblue;
+    box-shadow: 0 0 10px white;
 }
 input:user-invalid{
     background-color: #ffcdd2;
