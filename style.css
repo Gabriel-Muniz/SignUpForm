@@ -171,14 +171,13 @@ button:hover{
     background-color: white;
     color: #1E3A8A;
 }
-input:invalid{
-    background-color: #ffcdd2;
-}
-input:valid{
-    background-color: #c8e6c9;
-}
 input:focus{
     outline: none;
     background-color: lightblue;
-    border-radius: 5px;
+}
+input:user-invalid{
+    background-color: #ffcdd2;
+}
+input:user-valid{
+    background-color: #c8e6c9;
 }
