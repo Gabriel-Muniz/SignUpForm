@@ -1,64 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&family=Tilt+Neon&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
     <title>Sign-up</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="left-section">
-        <img class="bg-img" src="images/background.jpg" alt="">
+      <img class="bg-img" src="images/background.jpg" alt="" />
     </div>
     <div class="right-section">
-        <div class="top-right">
-            <p class="form-info">Filling up this form hypothetically give us permition for use your personal data for
-                whatever we want. Maybe we'll sell it,
-                maybe we'll make fun of yout e-mail, we don't know yet, so go ahead, fill it up!
-            </p>
-        </div>
-        <div class="form-container">
-            <form method="get" id="sign-up-form">
-                <legend>Fill the form with your informations</legend>
+      <div class="top-right">
+        <p class="form-info">
+          Filling up this form hypothetically give us permition for use your
+          personal data for whatever we want. Maybe we'll sell it, maybe we'll
+          make fun of yout e-mail, we don't know yet, so go ahead, fill it up!
+        </p>
+      </div>
+      <div class="form-container">
+        <form method="get" id="sign-up-form">
+          <legend>Fill the form with your informations</legend>
 
-                <label for="first_name">FIRST NAME <br>
-                    <input type="text" name="first_name" id="first_name" placeholder="Exemple: Jonh" required/>
-                </label>
+          <label for="first_name"
+            >First name <br />
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder="Exemple: Jonh"
+              required
+            />
+            <span aria-hidden="true"></span>
+          </label>
 
+          <label for="last_name"
+            >Last name<br />
+            <input
+              type="text"
+              name="last_name"
+              id="last_name"
+              placeholder="Example: textor"
+              required
+            />
+            <span aria-hidden="true"></span>
+          </label>
 
-                <label for="last_name">LAST NAME<br>
-                    <input type="text" name="last_name" id="last_name" placeholder="Example: textor" required/>
-                </label>
+          <label for="email"
+            >E-mail<br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Example: Jonny@email.com"
+              required
+            />
+            <span aria-hidden="true"></span>
+          </label>
 
+          <label for="phone"
+            >Phone number<br />
+            <input
+              type="tel"
+              name="phone_number"
+              id="phone"
+              placeholder="(xx) 9xxxx-xxxx"
+              required
+            />
+            <span aria-hidden="true"></span>
+          </label>
 
-                <label for="email">EMAIL<br>
-                    <input type="email" name="email" id="email" placeholder="Example: Jonny@email.com" required/>
-                </label>
+          <label for="password"
+            >Password<br />
+            <input type="password" name="password" id="password" required />
+            <span aria-hidden="true"></span>
+          </label>
 
-                <label for="phone">PHONE NUMBER<br>
-                    <input type="tel" name="phone_number" id="phone" placeholder="(xx) 9xxxx-xxxx" required/>
-                </label>
-
-
-                <label for="password">PASSWORD<br>
-                    <input type="password" name="password" id="password" required />
-                </label>
-
-                <label for="password-confirm">CONFIRM PASSWORD<br>
-                    <input type="password" name="password-confirm" id="password-confirm" required />
-                </label>
-
-            </form>
-        </div>
-        <div class="bottom-right">
-            <button type="submit" form="sign-up-form">Create Account</button>
-        </div>
+          <label for="password-confirm"
+            >Confirm password<br />
+            <input
+              type="password"
+              name="password-confirm"
+              id="password-confirm"
+              required
+            />
+            <span aria-hidden="true"></span>
+          </label>
+        </form>
+      </div>
+      <div class="bottom-right">
+        <button type="submit" form="sign-up-form">Create Account</button>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
