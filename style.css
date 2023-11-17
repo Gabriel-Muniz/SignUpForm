@@ -259,20 +259,44 @@ input[name="password-confirm"] {
 button {
   height: 1.5em;
 
-  border: 2px solid white;
+  border: 2px solid lightgray;
   background-color: transparent;
 
   font-size: 3em;
-  color: white;
+  color: lightgray;
 
-  box-shadow: 0px 0px 5px #60a5fa;
+  box-shadow: 0.01em 0.01em 0.5em rgba(0, 0, 0, 0.5),
+    0.01em 0.01em 0.5em rgba(0, 0, 0, 0.5) inset;
 
   cursor: pointer;
 }
 
 button:hover {
-  background-color: white;
-  color: #1e3a8a;
+  color: #8ff2ff;
+
+  border-color: #8ff2ff;
+  box-shadow: 0 0 0.8em #4ceaff, 0 0 0.8em #4ceaff inset;
+
+  text-shadow: 0 0 0.05em rgb(226, 254, 255), 0 0 0.2em #8ff2ff;
+  animation: animate 3s infinite alternate;
+}
+
+@keyframes animate {
+	40% {
+		opacity: 1;
+	}
+	42% {
+		opacity: 0.8;
+	}
+	43% {
+		opacity: 1;
+	}
+	45% {
+		opacity: 0.3;
+	}
+	46% {
+		opacity: 1;
+	}
 }
 
 input:required {
